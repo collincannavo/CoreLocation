@@ -8,6 +8,8 @@
 
 import UIKit
 import CoreLocation
+import MapKit
+
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
@@ -26,12 +28,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
+//        mapView.delegate = self
+//        mapView.showsUserLocation = true
     
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) }
         if let locatio = locaitons.last {
-            
+            self.locationLabel.text = "Lat: \(location.coordinate.latitude), long: \(location.coordinate.longitude)"
     }
 }
 
@@ -41,5 +45,28 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
 
 
+}
+
+class Location: NSObject, MKAnnotation {
+    
+    var latitude: Double
+    var longitude: Double
+    var name: String
+    
+    init(latitude: Double, longitude: Double, name: String) {
+        self.latitude = latitude
+        self.longitude = longitude
+        self.name = name
+    }
+    
+    var coordinate: CLLocationCoordinate2D {
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        return coordinate
+    }
+    
+    var title: String? {
+        return name
+    }
+    
 }
 
