@@ -36,22 +36,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let locatio = locaitons.last {
+        if let location = locations.last {
             self.locationLabel.text = "Lat: \(location.coordinate.latitude), long: \(location.coordinate.longitude)"
     }
 
-    let locationAnnotation = Location(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, name: "My Location")
+    let locationAnnotation = Location(latitude: locations.coordinate.latitude, longitude: locations.coordinate.longitude, name: "My Location")
         
-        
+    map.addAnnotation(locationAnnotation)
+    }
 }
-
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-
-
 
 
 class Location: NSObject, MKAnnotation {
@@ -75,5 +68,4 @@ class Location: NSObject, MKAnnotation {
         return name
     }
     
-}
-
+    }
