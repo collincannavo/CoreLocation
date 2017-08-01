@@ -13,7 +13,7 @@
 		B6A28B011F311C0F00786B97 /* CoreLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6A28AFF1F311C0F00786B97 /* CoreLocation.xcdatamodeld */; };
 		B6A28B031F311C0F00786B97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A28B021F311C0F00786B97 /* Assets.xcassets */; };
 		B6A28B061F311C0F00786B97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A28B041F311C0F00786B97 /* LaunchScreen.storyboard */; };
-		B6A28B0F1F311C4900786B97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A28B0E1F311C4900786B97 /* CoreLocation.framework */; };
+		B6A28B0F1F311C4900786B97 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A28B0E1F311C4900786B97 /* CoreLocation.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */

@@ -7,13 +7,33 @@
 //
 
 import UIKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate {
 
+    var locationManager: CLLocationManager!
+    
+    @IBOutlet weak var locationLabel: UILabel!
+   
+    @IBOutlet weak var map: MKMapView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+   
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        
+    
     }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) }
+        if let locatio = locaitons.last {
+            
+    }
+}
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
