@@ -14,6 +14,8 @@ import MapKit
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     var locationManager: CLLocationManager!
+    var currentLocation: Location?
+    var favoriteCity: Location?
     
     @IBOutlet weak var locationLabel: UILabel!
    
@@ -33,19 +35,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) }
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let locatio = locaitons.last {
             self.locationLabel.text = "Lat: \(location.coordinate.latitude), long: \(location.coordinate.longitude)"
     }
+
+    let locationAnnotation = Location(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude, name: "My Location")
+        
+        
 }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
 
 
-}
+
 
 class Location: NSObject, MKAnnotation {
     

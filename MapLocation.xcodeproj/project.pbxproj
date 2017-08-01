@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B6A28AF51F311C0F00786B97 /* CoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6A28AF51F311C0F00786B97 /* MapLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A28AF81F311C0F00786B97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A28AFA1F311C0F00786B97 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B6A28AFD1F311C0F00786B97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		B6A28AEC1F311C0F00786B97 = {
 			isa = PBXGroup;
 			children = (
-				B6A28AF71F311C0F00786B97 /* CoreLocation */,
+				B6A28AF71F311C0F00786B97 /* MapLocation */,
 				B6A28AF61F311C0F00786B97 /* Products */,
 				B6A28B0D1F311C4900786B97 /* Frameworks */,
 			);
@@ -52,12 +52,12 @@
 		B6A28AF61F311C0F00786B97 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6A28AF51F311C0F00786B97 /* CoreLocation.app */,
+				B6A28AF51F311C0F00786B97 /* MapLocation.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6A28AF71F311C0F00786B97 /* CoreLocation */ = {
+		B6A28AF71F311C0F00786B97 /* MapLocation */ = {
 			isa = PBXGroup;
 			children = (
 				B6A28AF81F311C0F00786B97 /* AppDelegate.swift */,
@@ -68,6 +68,7 @@
 				B6A28B071F311C0F00786B97 /* Info.plist */,
 				B6A28AFF1F311C0F00786B97 /* CoreLocation.xcdatamodeld */,
 			);
+			name = MapLocation;
 			path = CoreLocation;
 			sourceTree = "<group>";
 		};
@@ -82,9 +83,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6A28AF41F311C0F00786B97 /* CoreLocation */ = {
+		B6A28AF41F311C0F00786B97 /* MapLocation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6A28B0A1F311C0F00786B97 /* Build configuration list for PBXNativeTarget "CoreLocation" */;
+			buildConfigurationList = B6A28B0A1F311C0F00786B97 /* Build configuration list for PBXNativeTarget "MapLocation" */;
 			buildPhases = (
 				B6A28AF11F311C0F00786B97 /* Sources */,
 				B6A28AF21F311C0F00786B97 /* Frameworks */,
@@ -94,9 +95,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreLocation;
+			name = MapLocation;
 			productName = CoreLocation;
-			productReference = B6A28AF51F311C0F00786B97 /* CoreLocation.app */;
+			productReference = B6A28AF51F311C0F00786B97 /* MapLocation.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +117,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B6A28AF01F311C0F00786B97 /* Build configuration list for PBXProject "CoreLocation" */;
+			buildConfigurationList = B6A28AF01F311C0F00786B97 /* Build configuration list for PBXProject "MapLocation" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -129,7 +130,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6A28AF41F311C0F00786B97 /* CoreLocation */,
+				B6A28AF41F311C0F00786B97 /* MapLocation */,
 			);
 		};
 /* End PBXProject section */
@@ -304,7 +305,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6A28AF01F311C0F00786B97 /* Build configuration list for PBXProject "CoreLocation" */ = {
+		B6A28AF01F311C0F00786B97 /* Build configuration list for PBXProject "MapLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6A28B081F311C0F00786B97 /* Debug */,
@@ -313,7 +314,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6A28B0A1F311C0F00786B97 /* Build configuration list for PBXNativeTarget "CoreLocation" */ = {
+		B6A28B0A1F311C0F00786B97 /* Build configuration list for PBXNativeTarget "MapLocation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B6A28B0B1F311C0F00786B97 /* Debug */,
